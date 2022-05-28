@@ -47,6 +47,7 @@ nav li {
   width: 100%;
   margin: 0;
   object-fit: cover;
+  position: relative;
 }
 .whiteaside {
   top: 100px;
