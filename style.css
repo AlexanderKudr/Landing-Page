@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  top: 0;
-  left: 0;
 }
 html {
   scroll-padding-top: 50px;
@@ -29,6 +27,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  
 }
 @media (max-width: 768px) {
   nav ul {
@@ -53,6 +52,7 @@ nav li {
   object-fit: cover;
   position: relative;
 }
+/*Still need to work on aside thing. Want to make it responsible*/
 .whiteaside {
   top: 100px;
   left: 200px;
@@ -92,4 +92,21 @@ nav li {
   .flexible-interior {
     font-size: 2rem;
   }
+}
+.features-header {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 300px;
+}
+.feautures-part {
+  width: 300px;
+  height: 200px;
+  padding: 10px 10px;
+  text-align: center;
 }
