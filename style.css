@@ -159,3 +159,6 @@ nav li {
   flex-direction: column;
   justify-content: center;
 }
+.video iframe {
+  float: left;
+}
