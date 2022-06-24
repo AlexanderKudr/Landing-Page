@@ -172,4 +172,14 @@ nav li {
   font-size: 2rem;
   font-weight: 600;
 }
-
+footer {
+  height: 300px;
+  margin-top: 30px;
+  background-color: hsl(172, 87%, 15%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+}
+.footersec {
+  display: flex;
+  flex-direction: column;
+}
