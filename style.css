@@ -61,10 +61,10 @@ nav li {
   top: 100px;
   left: 200px;
   position: absolute;
-  width: 400px;
-  height: 488px;
+  width: 600px;
+  height: 500px;
   border: 1px solid rgba(255, 255, 255, 0);
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(172, 87%, 15%);
   border-radius: 10px;
 }
 @media (max-width: 768px) {
@@ -75,25 +75,13 @@ nav li {
     top: 130px; 
   }
 }
-.logo img {
-  display: flex;
-  height: 60px;
-  width: 100px;
-  margin: auto;
-  position: relative;
-  top: 40px;
-}
-.flexible-interior {
-  color: hsl(0, 0%, 0%);
+.Modern-Interior h3 {
+  color: hsl(0, 0%, 100%);
   font-size: 4rem;
   font-weight: 800;
-  display: flex;
-  position: relative;
-  top: 60px;
-  text-align: center;
 }
 @media (max-width: 768px) {
-  .flexible-interior {
+  .Modern-Interior {
     font-size: 2rem;
   }
 }
@@ -119,6 +107,9 @@ nav li {
   height: 200px;
   padding: 10px 10px;
   text-align: center;
+}
+.icon > i {
+  color: hsl(172, 87%, 15%);
 }
 
 
@@ -173,6 +164,9 @@ nav li {
   font-size: 2rem;
   font-weight: 600;
 }
+
+/*Bottom section*/
+
 footer {
   height: 300px;
   margin-top: 30px;
@@ -188,14 +182,38 @@ footer {
   flex-direction: column;
   width: 300px;
 }
-.footerafter {
-  
-  
+.up {
+  margin-top: 20px;
 }
-.footerafter p {
-  width: 190px;
+.margins {
+  margin-top: 15px;
+}
+.up2 {
+  margin-top: 35px;
+}
+.margins2 {
+  margin-top: 10px;
+}
+.footerafter li {
+  list-style: none;
+  line-height: 25px;
 }
 .footerafter i {
   margin-top: 30px;
-  padding-left: 25px;
+  padding-left: 20px;
 }
+.footerafter >* {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.up3 {
+  margin-top: 50px;
+}
+.typo1 {
+  width: 205px;
+  margin-top: 15px;
+}
+
+
+
+
