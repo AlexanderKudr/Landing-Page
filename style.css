@@ -1,16 +1,18 @@
+/*font-family: 'Nunito', sans-serif;
+font-family: 'Playfair Display', serif;*/
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html {
-  scroll-padding-top: 50px;
-  scroll-behavior: smooth;
+:root {
+  --primary-color: hsl(180, 87%, 15%);
 }
 body {
   font-size: 16px;
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
+
 
 /*Top section*/
 
@@ -31,6 +33,8 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 7px;
   
 }
 @media (max-width: 768px) {
@@ -50,6 +54,19 @@ nav li {
   font-weight: 800;
   list-style: none;
 }
+.astyling1 {
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Playfair Display', serif;
+}
+.astyling2 {
+  font-size: 1.2rem;
+}
+.astyling2:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: 0.3s;
+  cursor: pointer;
+}
 #image {
   width: 100%;
   margin: auto;
@@ -61,11 +78,12 @@ nav li {
   top: 100px;
   left: 200px;
   position: absolute;
-  width: 600px;
-  height: 500px;
+  width: 500px;
+  height: 450px;
   border: 1px solid rgba(255, 255, 255, 0);
-  background-color: hsl(172, 87%, 15%);
+  background-color: var(--primary-color);
   border-radius: 10px;
+  display: flex;
 }
 @media (max-width: 768px) {
   .whiteaside {
@@ -75,10 +93,29 @@ nav li {
     top: 130px; 
   }
 }
-.Modern-Interior h3 {
+.Modern-Interior {
   color: hsl(0, 0%, 100%);
   font-size: 4rem;
   font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 5px;
+}
+.Modern-Interior h2 {
+  font-size: 3rem;
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+.Modern-Interior p {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  font-weight: 300;
+  text-align: center;
+
 }
 @media (max-width: 768px) {
   .Modern-Interior {
@@ -89,9 +126,11 @@ nav li {
 /*Middle section*/
 
 .features-header {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   padding: 2rem;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 .features {
   width: 80%;
@@ -108,11 +147,12 @@ nav li {
   padding: 10px 10px;
   text-align: center;
 }
-.icon > i {
-  color: hsl(172, 87%, 15%);
+.feautures-part h3 {
+  margin-top: 10px;
 }
-
-
+.icon > i {
+  color: var(--primary-color);
+}
 .furniture-cards {
   width: 1000px;
   margin: auto;
@@ -125,7 +165,7 @@ nav li {
 }
 .general-cards {
   width: 400px;
-  height: 480px;
+  height: 500px;
   border-radius: 5px;  
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -151,6 +191,18 @@ nav li {
   flex-direction: column;
   justify-content: center;
 }
+.general-cards h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Playfair Display', serif;
+  line-height: 0;
+  margin-bottom: 5px;
+  padding-top: 15px;
+}
+.general-cards p {
+  padding-top: 20px;
+}
 .video {
   display: flex;
   flex-direction: row;
@@ -170,7 +222,7 @@ nav li {
 footer {
   height: 300px;
   margin-top: 30px;
-  background-color: hsl(172, 87%, 15%);
+  background-color: var(--primary-color);
   color: hsl(0, 0%, 100%);
   display: flex;
   justify-content: center;
@@ -189,7 +241,7 @@ footer {
   margin-top: 15px;
 }
 .up2 {
-  margin-top: 35px;
+  margin-top: 30px;
 }
 .margins2 {
   margin-top: 10px;
