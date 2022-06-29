@@ -11,6 +11,7 @@ font-family: 'Playfair Display', serif;*/
 body {
   font-size: 16px;
   height: 100%;
+  background-color: hsl(0, 0%, 95%);
 }
 
 /*Top section*/
@@ -52,6 +53,10 @@ nav li {
   font-weight: 800;
   list-style: none;
 }
+nav a {
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+  }
 .astyling1 {
   font-family: 'Nunito', sans-serif;
   font-family: 'Playfair Display', serif;
@@ -147,8 +152,14 @@ nav li {
 .feautures-part h3 {
   margin-top: 10px;
 }
-.icon > i {
+.icon i {
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
   color: var(--primary-color);
+}
+.icon i:hover {
+  top: -10px;
 }
 .furniture-cards {
   width: 1000px;
@@ -213,6 +224,12 @@ nav li {
   font-size: 2rem;
   font-weight: 600;
 }
+.video-description a {
+  color: hsl(174, 94%, 27%);
+}
+.video-description a:hover {
+  color: var(--primary-color);
+}
 
 /*Bottom section*/
 
@@ -226,13 +243,45 @@ footer {
   align-items: center;
   gap: 200px;
 }
+form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+form > h1 {
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+}
+.submit-offer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.submit-offer input {
+  width: 300px;
+  height: 50px;
+  border-style: none;
+  padding: 10px;
+}
+.submit-offer button {
+  width: 100px;
+  background-color: var(--primary-color);
+  color: hsl(0, 0%, 100%);
+}
+/* ::placeholder {
+  color: deeppink;
+  background: hsl(0, 0%, 100%);
+} */
 .footersec {
   display: flex;
   flex-direction: column;
   width: 300px;
 }
 .up {
-  margin-top: 20px;
+  margin-top: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 .margins {
   margin-top: 15px;
@@ -242,6 +291,14 @@ footer {
 }
 .margins2 {
   margin-top: 10px;
+  margin-left: 50px;
+}
+.margins2 a {
+  text-decoration: underline;
+  color:hsl(0, 0%, 100%);
+}
+.margins2 a:hover {
+  color:hsl(174, 94%, 27%);
 }
 .footerafter li {
   list-style: none;
@@ -256,11 +313,19 @@ footer {
   font-weight: 400;
 }
 .up3 {
-  margin-top: 50px;
+  margin-top: 45px;
 }
 .typo1 {
   width: 205px;
   margin-top: 15px;
+}
+.typo1 i {
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
+}
+.typo1 i:hover {
+  top: -10px;
 }
 
 
