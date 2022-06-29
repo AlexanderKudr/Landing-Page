@@ -269,10 +269,6 @@ form > h1 {
   background-color: var(--primary-color);
   color: hsl(0, 0%, 100%);
 }
-/* ::placeholder {
-  color: deeppink;
-  background: hsl(0, 0%, 100%);
-} */
 .footersec {
   display: flex;
   flex-direction: column;
