@@ -163,6 +163,7 @@ nav a {
 }
 .icon i:hover {
   top: -10px;
+  cursor: pointer;
 }
 .furniture-cards {
   width: 1000px;
@@ -267,10 +268,20 @@ form > h1 {
   border-style: none;
   padding: 10px;
 }
+.submit-offer input:focus {
+  background-color: hsl(0, 0%, 97%);
+}
 .submit-offer button {
   width: 100px;
+  margin-left: 5px;
   background-color: var(--primary-color);
   color: hsl(0, 0%, 100%);
+  transition: ease 0.2s;
+}
+.submit-offer button:hover {
+  transform: scale(1.1);
+  color: hsl(174, 94%, 27%);
+  cursor: pointer;
 }
 .footersec {
   display: flex;
@@ -325,6 +336,11 @@ form > h1 {
 }
 .typo1 i:hover {
   top: -10px;
+  cursor: pointer;
+}
+.typo1 u:hover {
+  color: hsl(174, 94%, 27%);
+  cursor: pointer;
 }
 
 
