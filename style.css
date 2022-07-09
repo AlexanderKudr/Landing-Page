@@ -14,7 +14,7 @@ body {
 }
 .container {
   margin: 0 auto;
-  width: 1100px; /*Prevent horizontal scrolling*/
+  max-width: 1100px; /*Prevent horizontal scrolling*/
 }
 @media (max-width: 768px) {
   .container {
